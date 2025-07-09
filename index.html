@@ -7,7 +7,6 @@
     <title>ValvassoriDev Portifólio</title>
   </head>
   <body>
-
     <nav class="navegacao">
       <ul class="menu">
         <li>
@@ -26,11 +25,15 @@
           <a href="#contatos" class="menu-link">Contato</a>
         </li>
       </ul>
-    <div class="baixar-curriculo">
-    <a href="curriculo/CV Mateus Valvassori Batista.pdf" download class="curriculo">Baixar Currículo</a>
-    </div>
+      <div class="baixar-curriculo">
+        <a
+          href="curriculo/CV Mateus Valvassori Batista.pdf"
+          download
+          class="curriculo"
+          >Baixar Currículo</a
+        >
+      </div>
     </nav>
-
 
     <main id="inicio" class="cabecalho">
       <img
@@ -41,24 +44,23 @@
       <h1>Mateus Valvassori Batista</h1>
       <p class="subtitulo">Desenvolvedor Front-end</p>
     </main>
-        <section>
-      
-</section>
+    <section></section>
 
     <section id="sobre" class="sobre">
       <h2 class="sobre-titulo">Sobre mim</h2>
       <div class="sobre-caixa">
         <p class="sobre-paragrafo">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          molestiae praesentium molestias quo aspernatur nostrum dolores
-          repellendus quisquam, iusto, in aperiam suscipit laborum rem
-          distinctio harum mollitia aliquam, quae accusamus.
+          Sou Mateus Valvassori, tenho 27 anos e sou um desenvolvedor em
+          transição de carreira com foco em front-end e automação. Tenho
+          experiência em logística e liderança de projetos. Hoje me dedico ao
+          desenvolvimento web com tecnologias como JavaScript, React, Node.js e
+          Next.js. No meu GitHub compartilho projetos que demonstram minha
+          evolução técnica e paixão por tecnologia.
         </p>
       </div>
-      
     </section>
     <section id="habilidades" class="habilidades">
-            <h2 class="habilidades-titulo">Habilidades</h2>
+      <h2 class="habilidades-titulo">Habilidades</h2>
       <div class="container">
         <div class="card">
           <img
@@ -142,49 +144,47 @@
       <div class="projetos-caixa">
         <div class="projetos-card">
           <img
-            src="./img/fd0a7888a1165a085fabf22a1ac3fd41.jpg"
-            alt="projeto 1"
+          id="assistentemeta"
+            src="./img/AssistenteMeta.png"
+            alt="assistente"
             class="projeto-imagem"
+            onclick="window.open('https://github.com/ValvassoriDev/Assistente-Meta', '_blank')"
           />
           <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Projeto1</h3>
+            <h3 class="info-projetos">Assistente de Meta</h3>
             <p class="paragrafo-projetos">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              quas consectetur cumque, qui dolorem, magni cupiditate, magnam
-              culpa excepturi odio repudiandae possimus architecto impedit ipsa
-              dolor rerum est quae? Dolor!
+              Projeto realizado junto a RocketSeat que funciona como um buscador
+              rapido para auxiliar o jogador com Estratégias, Builds e
+              Composições baseadas no jogo a sua escolha, utilizando a IA Gemini
+              como ferramenta de busca.
             </p>
           </div>
         </div>
         <div class="projetos-card">
           <img
-            src="./img/fd0a7888a1165a085fabf22a1ac3fd41.jpg"
-            alt="projeto 2"
+            src="./img/restApi.png"
+            alt="apiRest"
             class="projeto-imagem"
+            onclick="window.open('https://github.com/ValvassoriDev/RestApiJS', '_blank')"
           />
           <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Projeto2</h3>
+            <h3 class="info-projetos">restApi</h3>
             <p class="paragrafo-projetos">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              quas consectetur cumque, qui dolorem, magni cupiditate, magnam
-              culpa excepturi odio repudiandae possimus architecto impedit ipsa
-              dolor rerum est quae? Dolor!
+              RestApi em JavaScript desenvolvida durante o curso de Web Development feito na UDEMY.
             </p>
           </div>
         </div>
         <div class="projetos-card">
           <img
-            src="./img/fd0a7888a1165a085fabf22a1ac3fd41.jpg"
-            alt="projeto 3"
+            src="./img/curso.dev.png"
+            alt="cursoDev"
             class="projeto-imagem"
           />
           <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Projeto3</h3>
+            <h3 class="info-projetos">Clone TabNews</h3>
             <p class="paragrafo-projetos">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              quas consectetur cumque, qui dolorem, magni cupiditate, magnam
-              culpa excepturi odio repudiandae possimus architecto impedit ipsa
-              dolor rerum est quae? Dolor!
+              (Em desenvolvimento)
+              Projeto sendo desenvolvido durante o Curso.Dev do Filipe Deschamps
             </p>
           </div>
         </div>
@@ -223,8 +223,7 @@
         const email = document.getElementById("email").value;
         const mensagem = document.getElementById("mensagem").value;
         const telefoneEnvio = "5527999914738";
-        const textoEnviado =
-        `Olá Me chamo ${nome}, ${mensagem}, segue meus contatos ${email} - ${telefone}`
+        const textoEnviado = `Olá Me chamo ${nome}, ${mensagem}, segue meus contatos ${email} - ${telefone}`;
         const mensagemFormatada = encodeURIComponent(textoEnviado);
 
         const url = `https://wa.me/${telefoneEnvio}?text=${mensagemFormatada}`;

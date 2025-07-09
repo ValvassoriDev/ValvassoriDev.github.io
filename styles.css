@@ -142,14 +142,20 @@ h1 {
 
 .projetos-card:hover {
   box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
-  transform: translateY(-10px) scale(1.03);
+ 
 }
 
 .projeto-imagem {
-  height: 200px;
   width: 100%;
-  object-fit: cover;
+  height: 300px; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
 }
+
+
 
 .info-projetos {
   margin-bottom: 5px;
