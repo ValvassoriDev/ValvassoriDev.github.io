@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>ValvassoriDev Portifólio</title>
+    <title>Mateus Valvassori</title>
   </head>
   <body>
     <nav class="navegacao">
@@ -26,14 +26,6 @@
           <a href="#contatos" class="menu-link">Contato</a>
         </li>
       </ul>
-      <div class="baixar-curriculo">
-        <a
-          href="curriculo/CV Mateus Valvassori Batista.pdf"
-          download
-          class="curriculo"
-          >Baixar Currículo</a
-        >
-      </div>
     </nav>
 
     <main id="inicio" class="cabecalho">
@@ -176,7 +168,12 @@
           </div>
         </div>
         <div class="projetos-card">
-          <img src="./img/ApiFull-Stack.png" alt="Api" class="projeto-imagem" />
+          <img
+            src="./img/ApiFull-Stack.png"
+            alt="Api"
+            class="projeto-imagem"
+            onclick="window.open('https://github.com/ValvassoriDev/FullStackApi-Back', '_blank')"
+          />
           <div class="caixa-textos-projetos">
             <h3 class="info-projetos">Api FullStack</h3>
             <p class="paragrafo-projetos">
@@ -188,6 +185,16 @@
         </div>
       </div>
     </section>
+
+    <div class="baixar-curriculo">
+      <h1>Baixe meu curriculo completo</h1>
+      <a
+        href="curriculo/CV Mateus Valvassori Batista.pdf"
+        download
+        class="curriculo"
+        >Baixar Currículo</a
+      >
+    </div>
 
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
